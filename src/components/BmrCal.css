@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+div#bmrcalc {
+    height: 100%;
+    width: 100%;
+    background: url(./images/Level1.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.form {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0 1px 9px #a333cf;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    max-width: 100%;
+}
+h2 {
+    margin: 0px;
+    text-align: center;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: rgb(0, 0, 0);
+    color: white;
+    text-shadow: 0 0 0.05em rgb(0, 0, 0), 0 0 0.2em #030303, 0 0 0.3em #050505;
+}
+
+.inputwrap {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.inputwrap label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+input[type="text"],input[type="number"] {
+    padding: 8px 7px;
+    width: 110px;
+    margin-right: 10px;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    background: rgb(12, 12, 12);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    border: none;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 1px;
+    background: rgba(0, 0, 0, 0.400);
+    color: white;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+}
+select {
+    padding: 10px 10px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.error {
+    background: #bf2121;
+    color: white;
+    text-align: center;
+    padding: 4px 16px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.result {
+    background: rgba(31, 228, 5, 0.452);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 9px;
+    font-size: 18px;
+}
+.workout {
+    margin-top: 19px;
+}
+
+@media only screen and (max-width:500px) {
+
+    div#bmrcalc {
+        align-items: end;
+    }
+}
